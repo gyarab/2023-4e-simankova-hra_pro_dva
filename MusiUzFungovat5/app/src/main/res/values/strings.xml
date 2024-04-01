@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MusiUzFungovat</string>
+    <string name="score_popis">Výsledné skóre:</string>
+    <string name="HRA_PRO_DVA" translatable="false">HRA PRO DVA</string>
+    <string name="previous" translatable="false">zpět na hlavní obrazovku</string>
+    <string name="uvod" translatable="false">nevim</string>
+    <string name="fabb" translatable="false">vyber hru</string>
+    <string name="mat_text" translatable="false">příklady z matematiky</string>
+    <string name="postreh" translatable="false">postreh</string>
+    <string name="postreh_text" translatable="false">postřeh hra</string>
+    <string name="zadani" >zadání</string>
+    <string name="left_one" translatable="false">možnost 0.1</string>
+    <string name="left_two" translatable="false">možnost 0.2</string>
+    <string name="left_three" translatable="false">možnost 0.3</string>
+    <string name="left_four" translatable="false">možnost 0.4</string>
+    <string name="right_one" translatable="false">možnost 1</string>
+    <string name="right_two" translatable="false">možnost 2</string>
+    <string name="right_three" translatable="false">možnost 3</string>
+    <string name="right_four" translatable="false">možnost 4</string>
+    <string name="naStart" translatable="false">kliknutím zahájíš hru</string>
+</resources>

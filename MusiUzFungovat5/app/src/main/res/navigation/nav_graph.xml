@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstPageActivity">
+
+    <activity
+        android:id="@+id/FirstPageActivity"
+        android:name = "com.example.musiuzfungovat.FirstPageActivity"
+        tools:layout="@layout/activity_first_page">
+
+    </activity>
+    <activity
+        android:id="@+id/SecondPageActivity"
+        android:name="com.example.musiuzfungovat.SecondPageActivity"
+        tools:layout="@layout/activity_second_page">
+
+    </activity>
+
+    <!-- <fragment
+         android:id="@+id/FirstFragment"
+         android:name="com.example.musiuzfungovat.FirstFragment"
+         android:label="@string/first_fragment_label"
+         tools:layout="@layout/fragment_first">
+
+         <action
+             android:id="@+id/action_FirstFragment_to_SecondFragment"
+             app:destination="@id/SecondFragment" />
+     </fragment>
+     <fragment
+         android:id="@+id/SecondFragment"
+         android:name="com.example.musiuzfungovat.SecondFragment"
+         android:label="@string/second_fragment_label"
+         tools:layout="@layout/fragment_second">
+
+         <action
+             android:id="@+id/action_SecondFragment_to_FirstFragment"
+             app:destination="@id/FirstFragment" />
+
+         <action
+             android:id="@+id/action_SecondFragment_to_MatematikaHra"
+             app:destination="@id/MatematikaHra" />
+         <action
+             android:id="@+id/action_SecondFragment_to_PostrehHra"
+             app:destination="@id/PostreHra"/>
+     </fragment>
+     <fragment
+         android:id="@+id/MatematikaHra"
+         android:name="com.example.musiuzfungovat.MatematikaHra"
+         android:label="Matematika Hra"
+         tools:layout="@layout/matematika_hra">
+
+     </fragment>
+     <fragment
+         android:id="@+id/PostreHra"
+         android:name="com.example.musiuzfungovat.PostrehHra"
+         android:label="Postreh Hra"
+         tools:layout="@layout/postreh_hra">
+
+     </fragment>-->
+</navigation>

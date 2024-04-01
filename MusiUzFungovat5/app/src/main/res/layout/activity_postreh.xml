@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostrehActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/color_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BLUE"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="50sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <ProgressBar
+                android:id="@+id/progress_bar_postreh"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="20dp"
+                    app:columnCount="2"
+                    app:rowCount="2">
+
+
+                    <Button
+                        android:id="@+id/green_btn_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="93dp"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/green"
+                        android:onClick="submitAnswerLeft"
+                        android:text="green"
+                        android:textColor="@color/green"
+                        app:layout_column="0"
+                        app:layout_row="0">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/pink_btn_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="93dp"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/pink"
+                        android:onClick="submitAnswerLeft"
+                        android:text="pink"
+                        android:textColor="@color/pink"
+                        app:layout_column="1"
+                        app:layout_row="0">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/blue_btn_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="93dp"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/blue"
+                        android:onClick="submitAnswerLeft"
+                        android:text="blue"
+                        android:textColor="@color/blue"
+                        app:layout_column="0"
+                        app:layout_row="1">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/orange_btn_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="93dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/orange"
+                        android:onClick="submitAnswerLeft"
+                        android:text="orange"
+                        android:textColor="@color/orange"
+                        app:layout_column="1"
+                        app:layout_row="1">
+
+                    </Button>
+                </GridLayout>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="207dp"
+                    android:layout_marginLeft="280dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="50dp"
+                    app:columnCount="2"
+                    app:rowCount="2">
+
+                    <Button
+                        android:id="@+id/green_btn_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="93dp"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/green"
+                        android:onClick="submitAnswerRight"
+                        android:text="green"
+                        android:textColor="@color/green"
+                        app:layout_column="0"
+                        app:layout_row="0">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/pink_btn_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="93dp"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/pink"
+                        android:onClick="submitAnswerRight"
+                        android:text="pink"
+                        android:textColor="@color/pink"
+                        app:layout_column="1"
+                        app:layout_row="0">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/blue_btn_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="93dp"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/blue"
+                        android:onClick="submitAnswerRight"
+                        android:text="blue"
+                        android:textColor="@color/blue"
+                        app:layout_column="0"
+                        app:layout_row="1">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/orange_btn_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="93dp"
+                        android:layout_row="1"
+                        android:layout_column="1"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/orange"
+                        android:onClick="submitAnswerRight"
+                        android:text="orange"
+                        android:textColor="@color/orange"
+                        app:layout_column="1"
+                        app:layout_row="1">
+
+                    </Button>
+
+                </GridLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

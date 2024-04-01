@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background= "#F4F4F4"
+    tools:context=".SecondPageActivity"
+    >
+
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="1dp"
+        android:text="@string/previous"
+        app:layout_constraintBottom_toTopOf="@id/textview_second"
+        android:backgroundTint="#8988F4"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:text="@string/uvod"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_second" />
+
+
+    <!-- hlavni rozbalovaci button s gaming ikonkou a vyberem hry-->
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="140dp"
+        android:backgroundTint="#A6D0A1"
+        android:text="@string/fabb"
+        app:icon="@drawable/gaming"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--mensi button pro matematiku-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/matika"
+        android:layout_width="wrap_content"
+        android:layout_height="151dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="318dp"
+        android:layout_marginEnd="178dp"
+        android:backgroundTint="#D3ECB5"
+        android:contentDescription="TODO"
+        android:src="@drawable/tools_2249434"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@id/fabb"
+        app:layout_constraintEnd_toEndOf="@id/fabb" />
+
+    <!--text k matice-->
+    <TextView
+        android:id="@+id/mat_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="384dp"
+        android:text="@string/mat_text"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/matika"
+        app:layout_constraintEnd_toEndOf="@id/matika"
+        app:layout_constraintTop_toTopOf="@id/matika" />
+
+    <!--mensi button pro postreh hru-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/postreh"
+        android:layout_width="wrap_content"
+        android:layout_height="151dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="431dp"
+        android:layout_marginEnd="177dp"
+        android:contentDescription="TD"
+        android:src="@drawable/oko"
+        android:backgroundTint="#D3ECB5"
+        android:onClick="openGame"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@id/fabb"
+        app:layout_constraintEnd_toEndOf="@id/fabb" />
+
+    <TextView
+        android:id="@+id/postreh_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="494dp"
+        android:text="@string/postreh_text"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/postreh"
+        app:layout_constraintEnd_toEndOf="@id/postreh"
+        app:layout_constraintTop_toTopOf="@id/postreh" />
+
+
+</RelativeLayout>

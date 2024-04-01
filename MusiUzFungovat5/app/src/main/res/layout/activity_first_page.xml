@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- TOTO ZPUSOBOVALO PROBLEM, BACKGROUND BYL JEN NA CASTI OBRAZOVKY
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment"
+    android:background="#F69FDE">
+-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background= "#F4F4F4"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FirstPageActivity"
+    >
+
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="51dp"
+        android:gravity="center_horizontal"
+        android:text="@string/HRA_PRO_DVA"
+        android:textSize="40dp"
+        android:textColor="#8988F4"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginBottom="49dp"
+        android:backgroundTint="#A6D0A1"
+        android:text="spustit hru" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="449dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="127dp"
+        android:src="@drawable/numbers" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#D3ECB5"
+        android:contentDescription="navodik"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+
+</RelativeLayout>
+

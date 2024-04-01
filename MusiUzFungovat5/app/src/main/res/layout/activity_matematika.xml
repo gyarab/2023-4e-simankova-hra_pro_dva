@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MatematikaActivity">
+
+     <TextView
+        android:id="@+id/tv_questions"
+        android:layout_width="60dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="16dp"
+        android:text="5+5=10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="380dp"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/right_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/right_one"
+            android:backgroundTint="#D3ECB5"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/right_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/right_two"
+            android:backgroundTint="#D3ECB5"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/right_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/right_three"
+            android:backgroundTint="#D3ECB5"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/right_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/right_four"
+            android:backgroundTint="#D3ECB5"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/left_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/left_one"
+            android:backgroundTint="#A6D0A1"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/left_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/left_two"
+            android:backgroundTint="#A6D0A1"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/left_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/left_three"
+            android:backgroundTint="#A6D0A1"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/left_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/left_four"
+            android:backgroundTint="#A6D0A1"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <!--<Button
+        android:id="@+id/naStart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#8988F4"
+        android:text="@string/naStart" />-->
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="24dp"
+        android:text="0s" />
+
+    <TextView
+        android:id="@+id/tv_score_matika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="42dp"
+        android:text="0pts" />
+
+    <ProgressBar
+        android:id="@+id/progressBarMatika"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:id="@+id/tv_bottommessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" />
+
+
+</RelativeLayout>
